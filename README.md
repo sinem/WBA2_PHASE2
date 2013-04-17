@@ -9,7 +9,7 @@ in Bezug auf Ihr Fachgebiet auszutauschen bzw. anderen Kommilitonen zur Verfügu
 Das Anwendungssystem besteht aus drei Hauptreitern: "Modul", "Professoren", "News".
 
 In dem Reiter "Module" wird den Studenten die Gelegenheit zur Verfügung gestellt, individuelle Prioritäten per Abonements 
-der aufgelisteten Module zu setzen, wobei noch die möglichkeit besteht mehrere Module aber auch Professoren zu Abbonieren.
+der aufgelisteten Module zu setzen, wobei noch die Möglichkeit besteht mehrere Module aber auch Professoren zu abonieren.
 
 Die Abonements stellen in unserem Fall die asynchrone Kommunikation unseres Systems dar, .
 
