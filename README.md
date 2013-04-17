@@ -14,3 +14,5 @@ Dieser Teil des Anwendungssystems stellt die synchrone Kommunikation zwischen Cl
 Per Abonnements wird den studenten die Gelegenheit zur Verfügung gestellt, individuelle Prioritäten 
 der aufgelisteten Module zu setzen, wodurch die internen Änderungen und Erneuerung per Benachrichtigung
 übermittelt werden.
+
+Hiermit stellen wir die asynchrone Kommunikation unseres Systems dar.
