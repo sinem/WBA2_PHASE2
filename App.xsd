@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="Application">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="Fachhochschulen">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Fachhochschule" type="xs:string" />
+					</xs:sequence>
+				</xs:complexType>		
+			</xs:element>
+	    <xs:element name="Studiengaenge">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="Studiengang" type="xs:string" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		<xs:element name="Kommentare">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="Kommentar" minOccurs="0" maxOccurs="unbounded" >
+						<xs:complexType>
+							<xs:sequence>
+				 				<xs:element name="Benutzername" type="xs:string" />
+				 				<xs:element name="Nachricht" type="xs:string"/>									
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>
+		<xs:element name="Nachrichten">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="Info" type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>
+	</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema>
