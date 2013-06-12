@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Professoren>
+		<Prof>
+			<Name>Prof. Fischer</Name>
+			<E-Mail>fischer at gm.fh-koeln.de</E-Mail>
+		</Prof>
+		
+		<Prof>
+			<Name>Prof. Noss</Name>
+			<E-Mail>christian.noss at fh-koeln.de</E-Mail>
+		</Prof>
+</Professoren>
