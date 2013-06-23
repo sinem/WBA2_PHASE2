@@ -1,22 +1,20 @@
 package GUI;
 import java.awt.*;
 import java.awt.event.*;
-
-
 import javax.swing.*;
 
-public class LoginMenu {
+public class gui_module {
 
 	JFrame frmApp = new JFrame("Application");
 
 	JTextField txt1 = new JTextField("App");
 	JButton btn1 = new JButton();
+	JButton btn2 = new JButton();
+	JButton btn3 = new JButton();
 	JLabel lbl1 = new JLabel();
-	JLabel lbl2 = new JLabel();
 	JComboBox cmbx = new JComboBox();
-	JComboBox cmbx2 = new JComboBox();
 
-	LoginMenu() {
+	gui_module() {
 
 		/* ----------- Einstellungen des JFrames ----------- */
 		// Ein JFrame muss mit .setVisible immer auf true gesetz werden!
@@ -29,6 +27,7 @@ public class LoginMenu {
 		// Wir setzen immer new FlowLayout() mit .setLayout
 		frmApp.setLayout(new FlowLayout());
 
+
 		/* ----------- Buttons, Labels, TextFelder ----------- */
 		// alle Objekte die in das JFrame hineinkommen sollen werden mit .add
 		// dem JFrame hinzugefügt
@@ -37,36 +36,60 @@ public class LoginMenu {
 		// Labels festlegen
 		
 
-		lbl1.setText("Hochschule");
+		lbl1.setText("1.Semester");
 		frmApp.add(lbl1);
+		
 
 		// Bei der ComboBox werden Items mit .addItem einzeln hinzugefügt
 
 		cmbx.addItemListener(new classcombobox());
 
 		frmApp.add(cmbx);
-		cmbx.addItem("FH Köln");
-		cmbx.addItem("RFH Köln");
+		cmbx.addItem("Alghoritmen und Programmierung I");
+		cmbx.addItem("Einführung in die Medieninformatik");
+		cmbx.addItem("Einführung in Betriebssysteme und Rechnerarchitektur");
+		cmbx.addItem("Mathematik I");
+		cmbx.addItem("Theoretische Informatik I");
+		cmbx.addItem("Alghoritmen und Programmierung II");
+		cmbx.addItem("Grunglagen der visuellen Kommunikation");
+		cmbx.addItem("Medientechnik und -produktion");
+		cmbx.addItem("Mathematik II");
+		cmbx.addItem("Theoretische Informatik II");
+		cmbx.addItem("Audiovisuelles Medienprojekt");
+
 		
-		lbl2.setText("Studiengang");
-		frmApp.add(lbl2);
+		btn2.setText("Abonnieren");
+		// Registrieren eines ActionListeners an den Button
+		btn2.addActionListener(new clickAbo());
+		frmApp.add(btn2);
 
-		cmbx2.addItemListener(new classcombobox());
-
-		frmApp.add(cmbx2);
-		cmbx2.addItem("Medieninformatik");
-		cmbx2.addItem("Allg. Informatik");
+		// Sonderdinger
+		btn2.setToolTipText("Button2");
+		frmApp.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		System.out.println("test");
 		
 	
 		btn1.setText("Fortsetzen");
 		// Registrieren eines ActionListeners an den Button
-		btn1.addActionListener(new click());
+		btn1.addActionListener(new clickForward());
 		frmApp.add(btn1);
 
 		// Sonderdinger
 		btn1.setToolTipText("Button1");
 		frmApp.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		System.out.println("test");
+		
+		btn3.setText("Zurück");
+		// Registrieren eines ActionListeners an den Button
+		btn3.addActionListener(new clickBack());
+		frmApp.add(btn3);
+
+		// Sonderdinger
+		btn3.setToolTipText("Button3");
+		frmApp.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		System.out.println("test");
+		
+		
 
 	}
 
@@ -79,7 +102,7 @@ public class LoginMenu {
 
 	// Hier wird eine interne Klasse erstellt, die als Event-Empfänger dient.
 	// Interface "ActionListener" wird benötigt
-	class click implements ActionListener {
+	class clickBack implements ActionListener {
 
 		public void actionPerformed(ActionEvent e) {
 			
@@ -87,6 +110,27 @@ public class LoginMenu {
 
 		}
 
+	}
+	
+	class clickForward implements ActionListener {
+
+		public void actionPerformed(ActionEvent e) {
+			
+			 new guiModulbeschreibung().setVisible(true);
+		}
+	}
+	
+	class clickAbo implements ActionListener {
+
+		public void actionPerformed(ActionEvent e) {
+			
+			try {
+				throw new Exception("Die Abonnierung war erfolgreich!");
+			} catch (Exception e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+		}
 	}
 
 	class classcombobox implements ItemListener {
@@ -98,13 +142,10 @@ public class LoginMenu {
 		}
 
 	}
-	
-	
 
-	public static void main(String[] args) {
-
-		LoginMenu bla = new LoginMenu();
-
+	public void setVisible(boolean b) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

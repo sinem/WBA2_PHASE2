@@ -37,5 +37,18 @@ public class Module{
 	
 				return mdl;
 	}
+	
+	@POST
+	@Path("/Module/add")
+	@Consumes(MediaType.APPLICATION_XML)
+	public String postModule(
+			@QueryParam("modul") String modul) {
+
+		if (modul == null) {
+			throw new IllegalArgumentException("Modulbezeichnung darf nicht leer sein.");
+		}
+		
+		return modul;
+	}
 
 }

@@ -35,9 +35,6 @@ public class main {
 		service.getNodes();
 		service.printNode("Bruno");
 		System.out.println("");
-		service.printItemsOfXMPPEntity();
-		System.out.println("");
-		service.printIdentitiesOfXMPPEntity();
 		service.disconnect();
 		
 		System.out.println("");
@@ -50,7 +47,7 @@ public class main {
 		 */
 		pub.connect(u1);
 		pub.deleteMessage("1", "Bruno");
-		pub.addPayloadMessage("1", "Bruno", "Hi", 123123, 5.0f);
+		pub.addPayloadMessage("1", "Bruno");
 		pub.disconnect();
 		
 		System.out.println("");

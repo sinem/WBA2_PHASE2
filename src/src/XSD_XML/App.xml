@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Application>
+	<StudyNews>
+	<Fachhochschulen>
+		<Fachhochschule>FH Köln</Fachhochschule>
+		<Fachhochschule>RFH Köln</Fachhochschule>
+	</Fachhochschulen>
+	
+	<Professoren>
+		<Professor>Prof. Fischer</Professor>
+	</Professoren>
+	
+	<Module>
+		<Modul>Medieninformatik</Modul>
+		<Modul>Wirtschaftsinformatik</Modul>
+	</Module>
+	
+	<!-- falsch gedacht! :)
+	<Module>
+			<Modulbeschreibung>bla bla</Modulbeschreibung>
+			<Modulname>Datenbanken</Modulname>
+			<Prof>Prof. B. Bertelsmeier</Prof>
+			<Sem>Semester: 3</Sem>
+			<Prüfung>Prüfungsart: schriftlich</Prüfung>
+			<Voraussetzung>Voraussetzung: erfolg. Praktikum</Voraussetzung>
+			<Dateien>Dateien</Dateien>
+		</Modul>
+		
+		<Modul>
+			<Modulbeschreibung>bla bla bla</Modulbeschreibung>
+			<Modulname>Kommunikationstechnik</Modulname>
+			<Prof>Prof. H. L. Stahl</Prof>
+			<Sem>Semester: 3</Sem>
+			<Prüfung>Prüfungsart: schriftlich</Prüfung>
+			<Voraussetzung>Voraussetzung: erfolg. Praktikum</Voraussetzung>
+			<Dateien>Dateien</Dateien>
+		</Modul>
+		
+		<Modul>
+			<Modulbeschreibung>bla bla bla bla</Modulbeschreibung>
+			<Modulname>Algorithmen und Programmieren I</Modulname>
+			<Prof>Prof. F. Viktor</Prof>
+			<Sem>Semester: 1</Sem>
+			<Prüfung>Prüfungsart: schriftlich</Prüfung>
+			<Voraussetzung>Voraussetzung: erfolg. Praktikum</Voraussetzung>
+			<Dateien>Dateien</Dateien>
+		</Modul>
+	</Module> -->
+
+	
+	<Kommentare>
+		<Kommentar id="ID-1">
+			<Benutzername>sinosch</Benutzername>
+			<Nachricht>printf("Hello WOrld!!");</Nachricht>
+		</Kommentar>
+	</Kommentare>
+	
+	
+	<!-- falsch gedacht!! :)
+	<Professoren>
+		<Profname>Prof. B. Bertelsmeier</Profname>
+		<Profname>Prof. C. Noss</Profname>
+		<Profname>Prof. C. Fischer</Profname>
+	</Professoren>   -->
+	
+	<Nachrichten>
+		<Info>Heute fällt das Datenbank Praktikum aus.</Info>
+		<Info>Die Vorlesung "Kommunikationstechnik" findet im Raum 3.101 statt.</Info>
+	</Nachrichten>
+	</StudyNews>
+</Application>

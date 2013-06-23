@@ -1,14 +1,9 @@
 package Ressourcen;
 
-
-
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.xml.bind.JAXBException;
 import org.xml.sax.SAXException;
-
-
-
 
 @Path("/Nachrichten")
 public class Nachrichten{

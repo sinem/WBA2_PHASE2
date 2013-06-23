@@ -1,16 +1,11 @@
 package GUI;
-import java.awt.FlowLayout;
 import java.awt.*;
 import java.awt.event.*;
 
-import javax.swing.*;
-
-
 import javax.swing.JButton;
-import javax.swing.JComboBox;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.JTextField;
+
 
 
 public class MeinZweitesFenster {
@@ -47,12 +42,15 @@ public class MeinZweitesFenster {
 		
 		
 		btn1.setText("Module");
+		btn1.addActionListener(new clickMod());
 		frmApp.add(btn1);
 		
 		btn2.setText("News");
+		btn2.addActionListener(new clickNews());
 		frmApp.add(btn2);
 		
 		btn3.setText("Professoren");
+		btn3.addActionListener(new clickProf());
 		frmApp.add(btn3);
 
 		// Sonderdinger
@@ -69,11 +67,37 @@ public class MeinZweitesFenster {
 		System.out.println("test");
 
 	}
-
-	public boolean setVisible(boolean b) {
-		return true;
-		
-	}
-
 	
+	class clickMod implements ActionListener {
+
+		public void actionPerformed(ActionEvent e) {
+			
+			 new gui_module().setVisible(true);
+
+		}
+	}
+		
+		class clickNews implements ActionListener {
+
+			public void actionPerformed(ActionEvent e) {
+				
+				 new gui_news().setVisible(true);
+
+			}
+		}
+			
+			class clickProf implements ActionListener {
+
+				public void actionPerformed(ActionEvent e) {
+					
+					 new gui_prof().setVisible(true);
+
+				}
+			}
+
+			public void setVisible(boolean b) {
+				// TODO Auto-generated method stub
+				
+			}
+
 }
